@@ -15,12 +15,6 @@ run	mkdir /src
 run	git clone https://github.com/etsy/statsd.git /src/statsd
 add	./config.js /src/statsd/config.js
 
-
-##
-## NB: This Dockerfile *WILL NOT WORK* until such time as Docker adds support
-##     for UDP port forwarding.
-##
-
 # Statsd UDP port
 expose	8125/udp
 # Statsd Management port
