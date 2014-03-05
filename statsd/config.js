@@ -1,6 +1,6 @@
 {
-  graphitePort: process.env.GRAPHITE_PORT || 2003,
-  graphiteHost: process.env.GRAPHITE_HOST || "graphite",
+  graphitePort: process.env.GRAPHITE_PORT_2003_TCP_PORT,
+  graphiteHost: process.env.GRAPHITE_PORT_2003_TCP_ADDR,
   port: process.env.PORT || 8125,
   backends: ["./backends/graphite"]
 }
